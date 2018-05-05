@@ -14,7 +14,7 @@ $(function() {
       data: newEatenState
     }).then(
       function() {
-        console.log("changed sleep to", nowEaten);
+        console.log("changed eaten to", nowEaten);
         location.reload();
       }
     );

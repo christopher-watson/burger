@@ -1,20 +1,20 @@
-var orm = require("../config/orm");
+// var orm = require("../config/orm");
 
 $(function() {
   $(".change-eaten").on("click", function(event) {
     var id = $(this).data("id");
-    var nowEaten = $(this).data("nowEat");
+    var newDevour = $(this).data("newDevour");
 
-    var newEatenState = {
-      devoured: nowEaten
+    var newDevourState = {
+      devoured: true
     };
 
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
-      data: newEatenState
+      data: newDevourState
     }).then(
       function() {
-        console.log("changed eaten to", nowEaten);
+        console.log("changed eaten to", newDevour);
         location.reload();
       }
     );
@@ -41,4 +41,4 @@ $(function() {
 });
 
 
-module.exports = burger;
+// module.exports = burger;

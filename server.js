@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.engine("handlebars", bars({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-var routes = require("./controllers/catsController.js");
+var routes = require("./controllers/burgers_controller.js");
 app.use(routes);
 
 app.listen(PORT, function() {

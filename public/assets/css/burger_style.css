@@ -1,7 +1,35 @@
+/* main */
 body{
   background-color: white;
 }
 
+ul{
+ list-style-type: none;
+}
+
+li{
+  margin: 10px 0;
+}
+
+.big-font{
+  font-family: 'Titan One', sans-serif;
+}
+
+/* header */
 .jumbotron-fluid{
-  display: block;
+  height: auto;
+}
+
+#heading-text{
+  font-size: 100px;
+}
+
+#heading-burger{
+  width: 400px;
+  height: auto;
+}
+
+/* body */
+.devoured{
+  text-decoration: line-through;
 }

@@ -1,5 +1,3 @@
-// var orm = require("../config/orm");
-
 $(function() {
   $(".change-eaten").on("click", function(event) {
     var id = $(this).data("id");
@@ -24,8 +22,8 @@ $(function() {
     event.preventDefault();
 
     var newBurger = {
-      name: $("#burger-input").val().trim(),
-      devoured: false
+      burger_name: $("#burger-input").val().trim(),
+      devoured: 0
     };
 
     $.ajax("/api/burgers", {
@@ -38,7 +36,5 @@ $(function() {
       }
     );
   });
+
 });
-
-
-// module.exports = burger;
